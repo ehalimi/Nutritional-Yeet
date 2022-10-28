@@ -47,4 +47,11 @@ export const ADD_USER = gql`
       }
     }
   }
-`;
+`
+
+// make a search to google fit api
+// https://www.googleapis.com/fitness/v1/users/me/dataSources?q=strawberry 
+export const searchGoogleFit = (query) => {
+  return fetch(`https://www.googleapis.com/fitness/v1/users/me/dataSources?q=${query}`);
+}
+;
