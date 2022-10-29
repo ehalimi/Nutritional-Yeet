@@ -1,10 +1,10 @@
 const GraphicsSection = () => {
     return (
         <>
-            <div class="infoCards">
-                <section class="card">
+            <div className="infoCards">
+                <section className="card">
 
-                    <h3 class="Goals">Set Your Goals</h3>
+                    <h3 className="Goals">Set Your Goals</h3>
                     <img src="bonbon-bag-of-groceries.png" alt="" />
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate
@@ -14,9 +14,9 @@ const GraphicsSection = () => {
             </div>
 
 
-            <section class="card">
+            <section className="card">
 
-                <h3 class="Goals">Track Your Nutrition</h3>
+                <h3 className="Goals">Track Your Nutrition</h3>
                 <img src="bonbon-bag-of-groceries.png" alt="" />
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate
@@ -26,9 +26,9 @@ const GraphicsSection = () => {
 
 
 
-            <section class="card">
+            <section className="card">
 
-                <h3 class="Goals">Lose/Gain Weight</h3>
+                <h3 className="Goals">Lose/Gain Weight</h3>
                 <img src="bonbon-bag-of-groceries.png" alt="" />
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate
