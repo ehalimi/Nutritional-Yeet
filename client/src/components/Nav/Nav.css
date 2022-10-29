@@ -12,6 +12,26 @@ nav a {
   color: black;
 }
 
+.small-img {
+  height: 100px;
+  background-image: url("../../assets/Images/fabulous-radish.png");
+  display: block;
+  width: 20%;
+  background-size: 30%;
+  background-repeat: no-repeat;
+}
+
+.img {
+  height: 100px;
+  background-image: url("../../assets/Images/fabulous-radish.png");
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
 header h1 {
   text-align: center;
   font-size: 70px;
@@ -21,7 +41,7 @@ header {
   border-bottom: 1px solid black;
 }
 
-.diamond-shield {
+/* .diamond-shield {
   width: 0;
   height: 0;
   border: 50px solid transparent;
@@ -38,10 +58,8 @@ header {
   height: 0;
   border: 50px solid transparent;
   border-top: 70px solid red;
-}
+} */
 
-.diamond-container {
-  transform: scale(0.5);
-  max-height: 1px;
-  margin-top: -50px;
+.small-logo {
+  background-image: url("../../assets/Images/fabulous-radish.png");
 }

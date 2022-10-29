@@ -3,12 +3,10 @@ import './Nav.css';
 
 const Nav = () => {
     return (
-        <header className="header-bkg-img">
+       
+        <header>
             <nav>
-                <div className="diamond-container">
-                    <div className="diamond-shield">
-                    </div>
-                </div>
+            <div className="small-img"></div>
                 <div>
                     <Link to="/login">
                         Login
@@ -18,10 +16,12 @@ const Nav = () => {
                     </Link>
                 </div>
             </nav>
+            <div className="img"></div>
             <h1>
                 Nutritional Yeet
             </h1>
-        </header>
+            </ header>
+       
     )
 }
 export default Nav;

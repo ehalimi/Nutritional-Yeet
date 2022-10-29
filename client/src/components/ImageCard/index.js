@@ -1,8 +1,8 @@
 const ImageCard = ({ imgURL, title, description }) => {
     return (
         <div>
-
-            Hello Home </div>
+           <title> hi</title> 
+        </div>
     )
 }
 export default ImageCard;
