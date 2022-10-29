@@ -16,12 +16,11 @@ const Navigation = () => {
 
                             <img
                                 src={logo}
-                                width="30"
-                                height="30"
-                                className="d-inline-block align-top"
+                                width="60"
+                                height="25"
                                 alt=""
                             />
-                            Nutritional Yeet
+
                         </Navbar.Brand>
                     </Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -34,7 +33,13 @@ const Navigation = () => {
                     </Nav>
                 </Container>
             </Navbar>
-            <Image src={logo} />
+            <Image src={logo}
+                width="180"
+                height="60"
+                className="mx-auto d-block"
+                alt=""
+
+            />
             {/* <img src={logo} className="rounded mx-auto d-block" alt="..."></img> */}
 
 

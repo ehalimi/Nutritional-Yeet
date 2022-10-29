@@ -1,41 +1,60 @@
+import Card from 'react-bootstrap/Card';
+import Goals from '../../assets/Images/bonbon-bag-of-groceries.png';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const GraphicsSection = () => {
     return (
         <>
-            <div className="infoCards">
-                <section className="card">
+            <Container>
+                <Row>
+                    <Col>
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={Goals}
 
-                    <h3 className="Goals">Set Your Goals</h3>
-                    <img src="bonbon-bag-of-groceries.png" alt="" />
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate
-                        commodi.
-                    </p>
-                </section>
-            </div>
+                            />
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+
+                    <Col>
+                        <Card style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={Goals}
+
+                            />
+                            <Card.Body>
+                                <Card.Title>Card Title</Card.Title>
+                                <Card.Text>
+                                    Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
 
 
-            <section className="card">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={Goals}
 
-                <h3 className="Goals">Track Your Nutrition</h3>
-                <img src="bonbon-bag-of-groceries.png" alt="" />
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate
-                    commodi.
-                </p>
-            </section>
+                        />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the
+                                bulk of the card's content.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
 
-
-
-            <section className="card">
-
-                <h3 className="Goals">Lose/Gain Weight</h3>
-                <img src="bonbon-bag-of-groceries.png" alt="" />
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate
-                    commodi.
-                </p>
-            </section>
-
+                </Row>
+            </ Container>
         </>
     )
 }
