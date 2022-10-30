@@ -40,9 +40,6 @@ const Navigation = () => {
                 alt=""
 
             />
-            {/* <img src={logo} className="rounded mx-auto d-block" alt="..."></img> */}
-
-
             <h1 className="text-center" >
                 Nutritional Yeet
             </h1>
