@@ -3,10 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import logo from '../../assets/Images/fabulous-radish.png';
+import { nutrients } from '../../API';
 
 import './Nav.css';
 
 const Navigation = () => {
+    nutrients()
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data);
+    })  
     return (
         <>
             <Navbar bg="light" expand="lg">
