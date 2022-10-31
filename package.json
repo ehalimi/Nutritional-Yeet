@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/ehalimi/Nutritional-Yeet/issues"
   },
-  "homepage": "https://github.com/ehalimi/Nutritional-Yeet#readme"
+  "homepage": "https://github.com/ehalimi/Nutritional-Yeet#readme",
+  "dependencies": {
+    "@stripe/stripe-js": "^1.42.0",
+    "mongoose": "^6.7.0",
+    "stripe": "^10.15.0"
+  }
 }

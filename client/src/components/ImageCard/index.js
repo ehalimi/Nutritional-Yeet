@@ -1,7 +1,9 @@
+
+
 const ImageCard = ({ imgURL, title, description }) => {
     return (
         <div>
-           <title> hi</title> 
+            <title> hi</title> 
         </div>
     )
 }

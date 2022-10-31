@@ -1,9 +1,13 @@
-const url = "https://api.nal.usda.gov/fdc/v1/foods/search?query=pear&pageSize=2&api_key=a2JlS3v4B2tZxehAnVaGmRZnvw99cfactPuj9izA"
+const url = "https://nutrition-api.esha.com/nutrients";
 
-const API = {
-    nutrients: function() {
-        return fetch(`${url}`)
+const api = { 
+    nutrients: function(){
+        return fetch(`${url}nutrients`, {
+            headers: {
+                "Ocp-Apim-Subscription-Key": "ec953442bf8249358f75864e6137a33c"
+            }
+        })
     }
-}
+};
 
-module.exports = API;
+module.exports = api;
