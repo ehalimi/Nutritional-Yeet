@@ -18,6 +18,7 @@
     "gh-pages": "^4.0.0"
   },
   "dependencies": {
+    "mongoose": "^6.7.0",
     "stripe": "^10.15.0"
   },
   "bugs": {
