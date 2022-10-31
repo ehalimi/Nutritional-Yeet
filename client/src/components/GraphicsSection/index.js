@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 
 const GraphicsSection = () => {
     return (
-        <div class=" col-md-7 justify-content-center">
+        <div className=" col-md-7 justify-content-center">
             <Container>
                 <Row>
                     <Col>
