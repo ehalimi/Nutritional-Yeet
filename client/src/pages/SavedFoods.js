@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
-import { REMOVE_FOOD } from '../utils/mutation';
+import { REMOVE_FOOD } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 import { removeFoodId } from '../utils/localStorage';

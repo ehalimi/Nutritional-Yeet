@@ -3,9 +3,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import logo from '../../assets/Images/fabulous-radish.png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import './Nav.css';
+// import './Nav.css';
 
 const Navigation = () => {
     return (

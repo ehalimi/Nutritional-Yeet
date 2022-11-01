@@ -9,11 +9,11 @@ import Col from 'react-bootstrap/Col';
 
 const GraphicsSection = () => {
     return (
-        <div className=" col-md-7 justify-content-center">
+        <div>
             <Container>
                 <Row>
                     <Col>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem' }} className="border-0">
                             <Card.Img src={Goals} style={{ width: '13rem' }} className="mx-auto d-block"
 
                             />
@@ -28,7 +28,7 @@ const GraphicsSection = () => {
                     </Col>
 
                     <Col>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem' }} className="border-0">
                             <Card.Img variant="top" src={Track} style={{ width: '11rem' }} className="mx-auto d-block"
 
                             />
@@ -43,7 +43,7 @@ const GraphicsSection = () => {
                     </Col>
 
                     <Col>
-                        <Card style={{ width: '18rem' }}>
+                        <Card style={{ width: '18rem' }} className="border-0">
                             <Card.Img variant="top" src={Weight} style={{ margin: '87px' }} className="mx-auto d-block"
 
                             />

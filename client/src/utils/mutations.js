@@ -11,13 +11,13 @@ export const LOGIN = gql`
   }
 `;
 
-export const SAVE_FOOD = gql`
-  mutation saveFood()
-`;
+// export const SAVE_FOOD = gql`
+//   mutation saveFood()
+// `;
 
-export const REMOVE_FOOD = gql`
-mutation removeFood()
-`;
+// export const REMOVE_FOOD = gql`
+// mutation removeFood()
+// `;
 
 export const ADD_USER = gql`
   mutation addUser(
@@ -43,6 +43,6 @@ export const ADD_USER = gql`
 // make a search to google fit api
 // https://nutrition-api.esha.com/foods?query=${query} 
 export const searchFoodInfo = async (query) => {
-    return await fetch(`https://nutrition-api.esha.com/foods?query=${query}`);
+  return await fetch(`https://nutrition-api.esha.com/foods?query=${query}`);
 }
-    ;
+  ;

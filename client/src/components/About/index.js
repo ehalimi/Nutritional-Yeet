@@ -1,27 +1,32 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import computer from '../../assets/Images/desktop_computer.png';
+import Card from 'react-bootstrap/Card';
+import Girl from '../../assets/Images/bonbon-girl-cooking-a-salad-but-dreaming-about-meat.png';
+import Guy from '../../assets/Images/sammy-5.png';
 
 const About = () => {
     return (
-        <div className="d-flex flex-row justify-content-center">
+        <div className=" justify-content-center">
             <Container>
-                <Row>
+                <Row class="d-flex p-2">
                     <Col>
-                        <Image src={computer}
-                            width="600px"
-                            height="600px"
-                            className="mx-auto d-block"
-                            alt=""
+                        <Card style={{ width: '18rem' }} className="border-0">
+                            <Card.Img src={Girl} style={{ width: '13rem' }} className="mx-auto d-block"
 
-                        />
+                            />
+                        </Card>
+                    </Col>
+
+                    <Col>
+                        <Card style={{ width: '18rem' }} className="border-0">
+                            <Card.Img src={Guy} style={{ width: '13rem' }} className="mx-auto d-block"
+
+                            />
+                        </Card>
                     </Col>
                 </Row>
-            </Container>
 
-            <Container className="align-center">
                 <Row>
                     <Col>
                         <p>

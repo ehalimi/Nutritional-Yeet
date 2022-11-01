@@ -13,7 +13,7 @@ const SearchFoods = () => {
     // create state for holding our search field data
     const [searchInput, setSearchInput] = useState('');
 
-    // create state to hold saved FoodId values
+    // create state to hold saved FoodId valuesƒ
     const [savedFoodIds, setSavedFoodIds] = useState(getSavedFoodIds());
 
     const [saveFood] = useMutation(SAVE_FOOD)
