@@ -6,28 +6,29 @@ import {
 
 export const reducer = (state, action) => {
     switch (action.type) {
- 
-        // case ADD_TO_CART:
-        //     return {
-        //         ...state,
-        //         cartOpen: true,
-        //         cart: [...state.cart, action.product]
-        //     };
-        // case REMOVE_FROM_CART:
-        //     let newState = state.cart.filter(product => {
-        //         return product._id !== action._id;
-        //     });
-        //     return {
-        //         ...state,
-        //         cartOpen: newState.length > 0,
-        //         cart: newState
-        //     };
-        // if it's none of these actions, do not update state at all and keep things the same
+        // if action type value is the value of `Update_FOODS`, return a new state object with an updated products array
+        case SAVE_FOOD:
+            return {
+                ...state,
+                foods: [...action.foods],
+            };
+
+        case REMOVE_FOOD:
+            let newState = state.bag.filter((food) => {
+                return food._id !== action._id
+            })
+            return {
+                ...state,
+                bagOpen: newState.length > 0,
+                bag: newState,
+            };
+
+
         default:
-            return state;
+return state;
     }
 };
 
-export function useProductReducer(initialState) {
+export function useFoodReducer(initialState) {
     return useReducer(reducer, initialState);
 }

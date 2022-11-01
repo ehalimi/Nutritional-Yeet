@@ -4,7 +4,7 @@ import { Jumbotron, Container, Col, Form, Button, Card, CardColumns } from 'reac
 import Auth from '../utils/auth';
 import { searchFoods } from '../utils/API';
 import { saveFoodIds, getSavedFoodIds } from '../utils/localStorage';
-import { SAVE_FOOD } from '../utils/mutation';
+import { SAVE_FOOD } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
 
 const SearchFoods = () => {

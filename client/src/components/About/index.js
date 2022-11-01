@@ -6,7 +6,7 @@ import computer from '../../assets/Images/desktop_computer.png';
 
 const About = () => {
     return (
-        <div class="d-flex flex-row justify-content-center">
+        <div className="d-flex flex-row justify-content-center">
             <Container>
                 <Row>
                     <Col>
@@ -15,13 +15,9 @@ const About = () => {
                             height="600px"
                             className="mx-auto d-block"
                             alt=""
-
                         />
                     </Col>
                 </Row>
-            </Container>
-
-            <Container class="align-center">
                 <Row>
                     <Col>
                         <p>
