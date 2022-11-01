@@ -3,6 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import logo from '../../assets/Images/fabulous-radish.png';
+import LoginForm from '../../pages/Login';
+import SignupForm from '../../pages/Signup';
 
 import './Nav.css';
 
@@ -27,8 +29,8 @@ const Navigation = () => {
 
 
                     <Nav className="me-auto">
-                        <Nav.Link href="#Login">Login</Nav.Link>
-                        <Nav.Link href="#SignUp">SignUp</Nav.Link>
+                        <Nav.Link href={LoginForm}>Login</Nav.Link>
+                        <Nav.Link href={SignupForm}>SignUp</Nav.Link>
 
                     </Nav>
                 </Container>
