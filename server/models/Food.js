@@ -14,7 +14,7 @@ const foodSchema = new Schema({
         type: String,
         required: true,
     },
-    image: { 
+    image: {
         type: String,
     },
     link: {

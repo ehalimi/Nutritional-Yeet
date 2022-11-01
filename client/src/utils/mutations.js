@@ -10,34 +10,22 @@ export const LOGIN = gql`
     }
   }
 `;
+// export const SAVE_FOOD = gql`
+//   mutation saveFood()
+// `;
 
-export const ADD_ORDER = gql`
-  mutation addOrder($products: [ID]!) {
-    addOrder(products: $products) {
-      purchaseDate
-      products {
-        _id
-        name
-        description
-        quantity
-        category {
-          name
-        }
-      }
-    }
-  }
-`;
+// export const REMOVE_FOOD = gql`
+//   mutation removeFood()
+// `;
 
 export const ADD_USER = gql`
   mutation addUser(
-    $firstName: String!
-    $lastName: String!
+    $username: String!
     $email: String!
     $password: String!
   ) {
     addUser(
-      firstName: $firstName
-      lastName: $lastName
+      username: $username
       email: $email
       password: $password
     ) {

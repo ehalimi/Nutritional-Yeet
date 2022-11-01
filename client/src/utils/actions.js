@@ -1,9 +1,4 @@
-export const UPDATE_PRODUCTS = "UPDATE_PRODUCTS";
-export const UPDATE_CATEGORIES = "UPDATE_CATEGORIES";
-export const UPDATE_CURRENT_CATEGORY = "UPDATE_CURRENT_CATEGORY";
-export const ADD_TO_CART = "ADD_TO_CART";
-export const ADD_MULTIPLE_TO_CART = "ADD_MULTIPLE_TO_CART";
-export const UPDATE_CART_QUANTITY = "UPDATE_CART_QUANTITY";
-export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
-export const CLEAR_CART = "CLEAR_CART";
-export const TOGGLE_CART = "TOGGLE_CART";
+export const LOGIN = "LOGIN";
+export const SAVE_FOOD = "SAVE_FOOD";
+export const REMOVE_FOOD = "REMOVE_FOOD";
+export const ADD_USER = "ADD_USER";

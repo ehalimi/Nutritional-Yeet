@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import logo from '../../assets/Images/fabulous-radish.png';
+import {Link} from 'react-router-dom';
 
 import './Nav.css';
 
@@ -27,8 +28,8 @@ const Navigation = () => {
 
 
                     <Nav className="me-auto">
-                        <Nav.Link href="#Login">Login</Nav.Link>
-                        <Nav.Link href="#SignUp">SignUp</Nav.Link>
+                        <Nav.Link as={Link} to="/Login">Login</Nav.Link>
+                        <Nav.Link as={Link} to="/Signup">SignUp</Nav.Link>
 
                     </Nav>
                 </Container>

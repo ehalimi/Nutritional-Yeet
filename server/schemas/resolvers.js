@@ -5,15 +5,15 @@ const { AuthenticationError } = require('apollo-server-express');
 const resolvers = {
     Query: {
         //testing purposes users
-        users: async() => {
+        users: async () => {
             return User.find()
-            .populate('savedFoods');  
+                .populate('savedFoods');
         },
-        me: async(parent, args, context) => {
-            if (context.user){
-                const userData = await User.findOne({_id: context.user._id})
-                .select('-__v -password')
-                .populate('savedFoods'); 
+        me: async (parent, args, context) => {
+            if (context.user) {
+                const userData = await User.findOne({ _id: context.user._id })
+                    .select('-__v -password')
+                    .populate('savedFoods');
 
                 return userData
             }
@@ -24,39 +24,39 @@ const resolvers = {
         addUser: async (parent, args) => {
             const user = await User.create(args);
             const token = signToken(user);
-            return {user, token};
+            return { user, token };
         },
-        login: async (parent, {email, password}) => {
-            const user = await User.findOne({email});
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
 
-            if (!user){
+            if (!user) {
                 throw new AuthenticationError('Incorrect Credentials')
             }
 
             const correctPw = await user.isCorrectPassword(password);
 
-            if (!correctPw){
+            if (!correctPw) {
                 throw new AuthenticationError('Incorrect Credentials')
             }
 
             const token = signToken(user);
-            return {user, token};
+            return { user, token };
         },
-        saveFood: async (parent, args, context ) => {
-            if (context.user){
+        saveFood: async (parent, args, context) => {
+            if (context.user) {
                 const data = await User.findByIdAndUpdate(
-                    {_id: context.user._id},
-                    {$addToSet: {savedFoods: args.content}},
-                    {new: true, runValidators: true}
+                    { _id: context.user._id },
+                    { $addToSet: { savedFoods: args.content } },
+                    { new: true, runValidators: true }
                 )
                 return data;
             }
             throw new AuthenticationError("you need to be logged in!")
         },
-        removeFood: async (parent, {foodId}, context) => {
-            if (context.user){
+        removeFood: async (parent, { foodId }, context) => {
+            if (context.user) {
                 const data = await User.findByIdAndUpdate(
-                    {_id: context.user._id},
+                    { _id: context.user._id },
                     { $pull: { savedFoods: { foodId: foodId } } },
                     { new: true }
                 )

@@ -35,7 +35,7 @@ userSchema.pre('save', async function (next) {
         const saltRounds = 10;
         this.password = await bcrypt.hash(this.password, saltRounds);
     }
-    
+
     next();
 });
 
@@ -44,7 +44,7 @@ userSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
 };
 
-  // when we query a user, we'll also get another field called `bookCount` with the number of saved books we have
+// when we query a user, we'll also get another field called `bookCount` with the number of saved books we have
 userSchema.virtual('foodCount').get(function () {
     return this.savedFoods.length;
 });
