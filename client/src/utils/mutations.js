@@ -11,21 +11,12 @@ export const LOGIN = gql`
   }
 `;
 
-export const ADD_ORDER = gql`
-  mutation addOrder($products: [ID]!) {
-    addOrder(products: $products) {
-      purchaseDate
-      products {
-        _id
-        name
-        description
-        quantity
-        category {
-          name
-        }
-      }
-    }
-  }
+export const SAVE_FOOD = gql`
+  mutation saveFood()
+`;
+
+export const REMOVE_FOOD = gql`
+mutation removeFood()
 `;
 
 export const ADD_USER = gql`
