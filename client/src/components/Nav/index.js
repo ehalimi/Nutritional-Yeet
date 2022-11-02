@@ -1,9 +1,9 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import logo from '../../assets/Images/fabulous-radish.png';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
 
 // import './Nav.css';
 
@@ -37,13 +37,19 @@ const Navigation = () => {
             <Image src={logo}
                 width="180"
                 height="60"
-                className="mx-auto d-block"
+                className="mt-5 mx-auto d-block"
                 alt=""
 
             />
             <h1 className="text-center" >
                 Nutritional Yeet
             </h1>
+
+            <div style={{ width: '20rem' }} className=" mt-5 mx-auto input-group ">
+                <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" className="btn btn-primary">search</button>
+            </div>
+
         </>
     )
 }
