@@ -10,19 +10,13 @@ type User{
 }
 type Food{
     foodId: String
-    description: String
-    calories: [String]
-    name: String
-    image: String
-    link: String
+    query: String
+    items: [String]
 }
 input newFood {
-    calories: [String]
     foodId: String
-    description: String
-    name: String
-    image: String
-    link: String
+    query: String
+    items: [String]
 }
 type Auth {
     token: ID!
