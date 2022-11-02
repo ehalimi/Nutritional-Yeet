@@ -1,6 +1,9 @@
 {
   "name": "nutritional-yeet",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.16.0"
+  },
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
