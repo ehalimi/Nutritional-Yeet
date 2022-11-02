@@ -4,6 +4,9 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation } from '@apollo/client';
 import { LOGIN } from '../utils/mutations';
 import AuthService from '../utils/auth';
+import Image from 'react-bootstrap/Image';
+import logo from '../../src/assets/Images/fabulous-radish.png';
+import Footer from '../components/Footer';
 
 const LoginForm = () => {
     const [userFormData, setUserFormData] = useState({ email: '', password: '' });
@@ -50,6 +53,18 @@ const LoginForm = () => {
                 <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
                     Something went wrong with your login credentials!
                 </Alert>
+
+                <Image src={logo}
+                    width="180"
+                    height="60"
+                    className="mt-5 mx-auto d-block"
+                    alt=""
+
+                />
+                <h1 className="text-center" >
+                    Nutritional Yeet
+                </h1>
+
                 <Form.Group>
                     <Form.Label htmlFor='email'>Email</Form.Label>
                     <Form.Control
@@ -82,6 +97,7 @@ const LoginForm = () => {
                     Submit
                 </Button>
             </Form>
+            <Footer></Footer>
         </>
     );
 };

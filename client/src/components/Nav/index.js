@@ -46,7 +46,7 @@ const Navigation = () => {
             </h1>
 
             <div style={{ width: '20rem' }} className=" mt-5 mx-auto input-group ">
-                <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <input type="search" className="form-control rounded" placeholder="Search for any food product" aria-label="Search" aria-describedby="search-addon" />
                 <button type="button" className="btn btn-primary">search</button>
             </div>
 

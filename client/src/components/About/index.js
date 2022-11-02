@@ -30,10 +30,9 @@ const About = () => {
                 <Row>
                     <Col>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est laborum.
+                            Have you ever wanted to plan your daily meals in a knowledgeable and healthy manner? Isn't it annoying looking at that slice of cauliflower crust pizza and thinking "but is it healthy tho????"
+                            Well, Nutritional Yeet aims to help you with these make-or-break decisions you come across on a daily basis! Our app can help track your food intake by calculating caloric intake with each meal as well
+                            as letting you set your own goals on what it is that you want to accomplish on this journey to fun and healthy eating. Join us on this quest to become happy, knowledgeable and inspired!
                         </p>
                     </Col>
                 </Row>

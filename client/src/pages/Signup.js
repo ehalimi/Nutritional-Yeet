@@ -3,6 +3,9 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { ADD_USER } from '../utils/mutations';
 import { useMutation } from '@apollo/client';
 import AuthService from '../utils/auth';
+import Image from 'react-bootstrap/Image';
+import logo from '../../src/assets/Images/fabulous-radish.png';
+import Footer from '../components/Footer';
 
 const SignupForm = () => {
     // set initial form state
@@ -54,7 +57,16 @@ const SignupForm = () => {
                 <Alert dismissible onClose={() => setShowAlert(false)} show={showAlert} variant='danger'>
                     Something went wrong with your signup!
                 </Alert>
+                <Image src={logo}
+                    width="180"
+                    height="60"
+                    className="mt-5 mx-auto d-block"
+                    alt=""
 
+                />
+                <h1 className="text-center" >
+                    Nutritional Yeet
+                </h1>
                 <Form.Group>
                     <Form.Label htmlFor='username'>Username</Form.Label>
                     <Form.Control
@@ -100,6 +112,7 @@ const SignupForm = () => {
                     Submit
                 </Button>
             </Form>
+            <Footer></Footer>
         </>
     );
 };

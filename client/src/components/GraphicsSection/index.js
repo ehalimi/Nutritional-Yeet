@@ -46,7 +46,7 @@ const GraphicsSection = () => {
 
                             />
                             <Card.Body>
-                                <Card.Title>Calulate Calories</Card.Title>
+                                <Card.Title>Calculate Calories</Card.Title>
                                 <Card.Text>
                                     If keeping track of calories is your jam, Nutritional Yeet can help you.
                                 </Card.Text>
