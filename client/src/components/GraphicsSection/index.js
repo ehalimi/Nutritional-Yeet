@@ -10,48 +10,45 @@ import Col from 'react-bootstrap/Col';
 const GraphicsSection = () => {
     return (
         <div>
-            <Container>
+            <Container className="mt-5 mb-5 border-bottom">
                 <Row>
                     <Col>
-                        <Card style={{ width: '18rem' }} className="border-0">
-                            <Card.Img src={Goals} style={{ width: '10rem' }} className="mx-auto d-block"
+                        <Card style={{ width: '18rem' }} className="mx-auto border-0">
+                            <Card.Img src={Goals} style={{ width: '13rem' }} className="mx-auto d-block"
 
                             />
                             <Card.Body>
-                                <Card.Title margin="10px top">Set Your Goals</Card.Title>
+                                <Card.Title margin="10px top">Set Your Own Goals</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    With our app you can set goals yourself to help figure out whatever goals you may have.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
 
                     <Col>
-                        <Card style={{ width: '18rem' }} className="border-0">
-                            <Card.Img variant="10px top" src={Track} style={{ width: '11rem' }} className="mx-auto d-block"
+                        <Card style={{ width: '18rem' }} className=" mx-auto border-0">
+                            <Card.Img variant="top" src={Track} style={{ width: '11rem' }} className="mx-auto d-block"
 
                             />
                             <Card.Body>
-                                <Card.Title>Track Your Nutrition</Card.Title>
+                                <Card.Title>Track Your Food Intake</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    You can add food to your daily list to track your nutritional intake.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
 
                     <Col>
-                        <Card style={{ width: '18rem' }} className="border-0">
-                            <Card.Img variant="10px top" src={Weight} style={{ margin: '87px' }} className="mx-auto d-block"
+                        <Card style={{ width: '18rem' }} className="mx-auto border-0">
+                            <Card.Img variant="top" src={Weight} style={{ margin: '87px' }} className="mx-auto d-block"
 
                             />
                             <Card.Body>
-                                <Card.Title>Lose/Gain Weight</Card.Title>
+                                <Card.Title>Calculate Calories</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    If keeping track of calories is your jam, Nutritional Yeet can help you.
                                 </Card.Text>
                             </Card.Body>
                         </Card>

@@ -26,6 +26,7 @@
   "dependencies": {
     "@stripe/stripe-js": "^1.42.0",
     "mongoose": "^6.7.0",
+    "react-router-dom": "^6.4.3",
     "stripe": "^10.15.0"
   }
 }

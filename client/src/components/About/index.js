@@ -1,30 +1,38 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-import computer from '../../assets/Images/desktop_computer.png';
+import Card from 'react-bootstrap/Card';
+import Girl from '../../assets/Images/bonbon-girl-cooking-a-salad-but-dreaming-about-meat.png';
+import Guy from '../../assets/Images/sammy-5.png';
 
 const About = () => {
     return (
-        <div className="d-flex flex-row justify-content-center">
-            <Container>
-                <Row>
+        <div>
+            <Container className="mb-5 border-bottom">
+                <Row className="d-flex p-2">
                     <Col>
-                        <Image src={computer}
-                            width="600px"
-                            height="600px"
-                            className="mx-auto d-block"
-                            alt=""
-                        />
+                        <Card style={{ width: '18rem' }} className="mx-auto border-0">
+                            <Card.Img src={Girl} style={{ width: '13rem' }}
+
+                            />
+                        </Card>
+                    </Col>
+
+                    <Col>
+                        <Card style={{ width: '18rem' }} className="mx-auto border-0">
+                            <Card.Img src={Guy} style={{ width: '13rem' }}
+
+                            />
+                        </Card>
                     </Col>
                 </Row>
+
                 <Row>
                     <Col>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est laborum.
+                            Have you ever wanted to plan your daily meals in a knowledgeable and healthy manner? Isn't it annoying looking at that slice of cauliflower crust pizza and thinking "but is it healthy tho????"
+                            Well, Nutritional Yeet aims to help you with these make-or-break decisions you come across on a daily basis! Our app can help track your food intake by calculating caloric intake with each meal as well 
+                            as letting you set your own goals on what it is that you want to accomplish on this journey to fun and healthy eating. Join us on this quest to become happy, knowledgeable and inspired! 
                         </p>
                     </Col>
                 </Row>
