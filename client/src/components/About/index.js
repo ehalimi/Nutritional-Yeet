@@ -7,20 +7,20 @@ import Guy from '../../assets/Images/sammy-5.png';
 
 const About = () => {
     return (
-        <div className=" justify-content-center">
+        <div>
             <Container>
                 <Row class="d-flex p-2">
                     <Col>
                         <Card style={{ width: '18rem' }} className="border-0">
-                            <Card.Img src={Girl} style={{ width: '13rem' }} className="mx-auto d-block"
+                            <Card.Img src={Girl} style={{ width: '13rem' }}
 
                             />
                         </Card>
                     </Col>
 
                     <Col>
-                        <Card style={{ width: '18rem' }} className="border-0">
-                            <Card.Img src={Guy} style={{ width: '13rem' }} className="mx-auto d-block"
+                        <Card style={{ width: '18rem' }} className= "border-0">
+                            <Card.Img src={Guy} style={{ width: '13rem' }}
 
                             />
                         </Card>
