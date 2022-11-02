@@ -1,8 +1,8 @@
 {
-  "name": "nutritional-yeet",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@apollo/client": "^3.7.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -25,10 +25,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
