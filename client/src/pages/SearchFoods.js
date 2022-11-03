@@ -31,28 +31,28 @@ const SearchFoods = () => {
             return false;
         }
 
-        // try {
-        //     const response = await searchFoods(searchInput);
+        try {
+            const response = await searchFoods(searchInput);
 
-        //     if (!response.ok) {
-        //         throw new Error('something went wrong!');
-        //     }
+            if (!response.ok) {
+                throw new Error('something went wrong!');
+            }
 
-        //     const { items } = await response.json();
+            const { items } = await response.json();
 
-        //     const foodData = items.map((food) => ({
-        //         foodId: food.id,
-        //         names: food.products.names || ['No names to display'],
-        //         calories: food.products.calories,
-        //         description: food.products.description,
-        //         image: food.products.imageLinks?.thumbnail || '',
-        //     }));
+            const foodData = items.map((food) => ({
+                foodId: food.id,
+                names: food.products.names || ['No names to display'],
+                calories: food.products.calories,
+                description: food.products.description,
+                image: food.products.imageLinks?.thumbnail || '',
+            }));
 
-        //     setSearchedFoods(foodData);
-        //     setSearchInput('');
-        // } catch (err) {
-        //     console.error(err);
-        // }
+            setSearchedFoods(foodData);
+            setSearchInput('');
+        } catch (err) {
+            console.error(err);
+        }
     };
 
     // create function to handle saving a Food to our database
