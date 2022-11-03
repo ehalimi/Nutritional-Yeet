@@ -12,6 +12,8 @@ Our app, Nutritional Yeet, helps you track your nutritional input throughout you
 
 ## Deployed Link
 
+https://young-taiga-34370.herokuapp.com/
+
 ## Table of Contents
 
 - [Installation](#installation)
