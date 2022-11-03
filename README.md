@@ -46,6 +46,6 @@ This project is licensed under the MIT license. Please click here for more info:
 
 If you have any questions about the repository or about this application please send an email to:
 
-Guadalupe Rocha - rochalupe@gmail.com Github: grocha78
-Ema Halimi - emahalimi19@gmail.com Github: ehalimi
-Bethany Duchene-Jennings - bethany.jennings13@gmail.com Github: bjennings90
+- Guadalupe Rocha - rochalupe@gmail.com Github: grocha78
+- Ema Halimi - emahalimi19@gmail.com Github: ehalimi
+- Bethany Duchene-Jennings - bethany.jennings13@gmail.com Github: bjennings90
