@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Nutritional-Yeet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://github.com/ehalimi/Nutritional-Yeet
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Our app, Nutritional Yeet, helps you track your nutritional input throughout your day. You can set up an individual account that helps you create a breakfast, lunch or dinner plan for each day of the week.
 
-### `npm start`
+## Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src='./client/src/assets/Images/Screen Shot 2022-11-02 at 9.22.48 PM.png'>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployed Link
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Credits](#credits)
+- [License](#license)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The following dependencies must be installed to run the application:
+React, Node.js, Express.js, GraphQL, MongoDB, JWT, Heroku
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In order to use this application: NPM run develop at the root of project. Once connected, signup for an account and search for meal information.
 
-### `npm run eject`
+## Tests
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+N/A
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Credits
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ehalimi, bjennings90
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+This project is licensed under the MIT license. Please click here for more info: https://opensource.org/licenses/MIT
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any questions about the repository or about this application please send an email to:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Guadalupe Rocha - rochalupe@gmail.com Github: grocha78
+Ema Halimi - emahalimi19@gmail.com Github: ehalimi
+Bethany Duchene-Jennings - bethany.jennings13@gmail.com Github: bjennings90
